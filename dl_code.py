@@ -18,19 +18,19 @@ x = np.linspace(-10, 10, 100)
 
 # Calculate corresponding y values using the sigmoid function
 
-y1, boolVal = sigmoid(x)
-y2, boolVal = relu(x)
-y3, boolVal = leaky_relu(x)
-y4, boolVal = tanh(x)
+y1, boolVal1 = sigmoid(x)
+y2, boolVal2 = relu(x)
+y3, boolVal3 = leaky_relu(x)
+y4, boolVal4 = tanh(x)
 
-if boolVal:
+if boolVal1:
 # Plot the sigmoid function
     plt.plot(x, y1)
     plt.title('Sigmoid Function')
     plt.xlabel('x')
     plt.ylabel('sigmoid(x)')
     plt.grid(True)
-else:    
+elif boolVal2 or boolVal3 or boolVal4:    
     # Plot the relu function
     plt.plot(x, y2)
     plt.title('Relu Function')
